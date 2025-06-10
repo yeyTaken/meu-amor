@@ -28,22 +28,28 @@ body {
 
 
 
-/* styles/globals.css */
-.loading-screen {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  background-color: #121212;
-  color: white;
-  font-size: 2rem;
-  animation: fadeIn 0.3s ease-in-out;
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
 }
 
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-  } to {
+.animate-bounce {
+  animation: bounce 1s infinite;
+}
+
+.animate-pulse {
+  animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+@keyframes pulse {
+  0%, 100% {
     opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
   }
 }
