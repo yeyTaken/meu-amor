@@ -17,7 +17,10 @@ export default function Home() {
     "/image_6.png",
     "/image_7.png",
     "/image_8.png",
+    "/image_9.png"
   ];
+
+  const startDate = "2025-03-18T00:00:00"; // Data de início do relacionamento
 
   return (
     <div className="pt-3 px-4 w-full">
@@ -31,7 +34,7 @@ export default function Home() {
         <div className="text-center mt-8">
           <h1 className="text-2xl font-bold">Nossas memórias!</h1>
           <p className="text-2xl font-bold text-[#666666] mt-4">
-            <TimeSince startDate="2025-03-18T00:00:00" />
+            <TimeSince startDate={startDate} />
           </p>
         </div>
 

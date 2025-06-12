@@ -1,0 +1,30 @@
+.trailContainer {
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  overflow: hidden;
+  z-index: 9999;
+}
+
+.heartIcon {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  animation: fadeOut 1s ease-out forwards;
+}
+
+.heart {
+  color: rgba(239, 38, 38, 0.751);
+  font-size: 18px;
+  /* se quiser cores aleatórias, use inline style no FaHeart */
+}
+
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1);
+  }
+  100% {
+    opacity: 0;
+    transform: translate(-50%, -50%) scale(1.5);
+  }
+}
